@@ -34,6 +34,15 @@ Following CutAdapt, FastQC will be run again. From this, a second FastQC file wi
 
 # Trinity
 
+Trinity works by running threee seperate software packages together in orger to construct and assemble the transcriptome from your RNA-seq reads. 
 
+
+# Transdecoder
+
+We use transdecoder in order to map out potential coding regions withing our newly assembled transcriptome. 
+
+# cd-hit 
+
+This will remove redundant sequences from our assemblies. cd-hit will also produce a list of protein-families from a given fasta database.
 
 
