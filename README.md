@@ -6,7 +6,7 @@ For this project I will write a script to run all of the necessary steps to trim
 All of the programs will be run on the Alabama Super Computer. 
 
 
-# The Players 
+# The Players: 
 
 # FastQC
 
@@ -26,3 +26,14 @@ For my alignment, these are the adapter sequences used:
 3' Adapter:
 
 5'-GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG-3'
+
+Following CutAdapt, FastQC will be run again. From this, a second FastQC file will be created. You can use the information from these files to compare how your reads changed following CutAdapt. Things like number of reads, length of reads, per-base quality scores, percent GC content, etc. 
+
+*MAKE SURE FOR THIS STEP YOU ARE RUNNING FASTQC ON YOUR CUTADAPTED FILES* 
+
+
+# Trinity
+
+
+
+
