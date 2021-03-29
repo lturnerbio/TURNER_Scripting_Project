@@ -46,3 +46,8 @@ We use transdecoder in order to map out potential coding regions withing our new
 This will remove redundant sequences from our assemblies. cd-hit will also produce a list of protein-families from a given fasta database.
 
 
+# BUSCO
+
+I will be using the software BUSCO in order to asses both quality and annotation completeness of our newly assembled transcriptome. 
+
+
