@@ -27,6 +27,7 @@ For my alignment, these are the adapter sequences used:
 
 5'-GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG-3'
 
+
 Following CutAdapt, FastQC will be run again. From this, a second FastQC file will be created. You can use the information from these files to compare how your reads changed following CutAdapt. Things like number of reads, length of reads, per-base quality scores, percent GC content, etc. 
 
 *MAKE SURE FOR THIS STEP YOU ARE RUNNING FASTQC ON YOUR CUTADAPTED FILES* 
@@ -34,7 +35,13 @@ Following CutAdapt, FastQC will be run again. From this, a second FastQC file wi
 
 # Trinity
 
-Trinity works by running threee seperate software packages together in orger to construct and assemble the transcriptome from your RNA-seq reads. 
+Trinity needs to run from a scratch folder in the super computer, so you will need to create a directory within the scratch folder. This can be done using the following command:
+    
+    $ mkdir /scratch/Trinity
+    
+Note: double check to make sure that the name of the directory you have created is unique. You will be restricted access to the scratch folder if it has been created by another user. 
+
+Trinity works by running threee seperate software packages together in order to construct and assemble the transcriptome from your RNA-seq reads. 
 
 
 # Transdecoder
