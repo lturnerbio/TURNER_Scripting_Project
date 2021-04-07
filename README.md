@@ -8,6 +8,7 @@ All of the programs will be run on the Alabama Super Computer.
 Queue, time limits, memory limits, and processing cores will be listed on this readme as I have used them. They will vary based on the size of your data.
 All scripts were run on DMC. 
 
+
 # The Players: 
 
 # FastQC
@@ -52,7 +53,21 @@ Note: double check to make sure that the name of the directory you have created 
 
 Trinity works by running threee seperate software packages together in order to construct and assemble the transcriptome from your RNA-seq reads. 
 
+Ran using the large queue, 32 cores, 150:00:00, 100gb memory limit. 
 
+NOTE: Your submitted script may sit pending in the queue for a day or more. This is okay! The large queue, if you can believe it, is used to run large files or scripts that use a lot of power/memory. Once running, periodically check to make sure the script is still running. For my dataset the script needed to run for ~120 hours. 
+
+##############################################################################
+
+ALSO VERY IMPORTANT: 
+
+The Alabama Super Computer will periodically delete their scratch folder. It is good practice to copy your completed files from the scratch folder back to your main directory. This can be accomplished using the following command. 
+
+    $ cp -r /scratch/YourScratch_Folder /home/userID/Directory_You_Want_To_Save_Your_Files_In
+    
+NOTE: you can do this command individually for each file. However it is easier (in my opinion) to transfer the whole folder itself. MAKE SURE that you include the option -r. This allows the cp command to copy a whole directory (or directory of directories).     
+
+##############################################################################
 
 # Transdecoder
 
@@ -65,7 +80,7 @@ This will remove redundant sequences from our assemblies. cd-hit will also produ
 
 # BUSCO
 
-I will be using the software BUSCO in order to asses both quality and annotation completeness of our newly assembled transcriptome. 
+BUSCO is used to asses both quality and annotation completeness of our newly assembled transcriptome. 
 
 
 
