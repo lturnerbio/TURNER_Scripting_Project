@@ -12,9 +12,11 @@
 #  load the module
 source /opt/asn/etc/asn-bash-profiles-special/modules.sh
 module load anaconda/3-2020.02
-#  place commands here
+
 cd-hit-est -i /home/aublft/raw_data/Transdecoder/B1_trinity.Trinity.fasta.transdecoder.cds -o /home/aublft/cdhit/B1_rmdup -c 0.95 -n 10 -d 0 -M 0 -T 0
+
 #ran on dmc, medium queue, 10gb, 100:00:00, 8 cores
 
-#this is currently adapted and updated from Adam's code. Theoretically this should work. 
-#updated file to be executed for run 3. Fingers fucking crossed
+#this is currently adapted and updated from Adam's code. Theoretically this should work.
+#updated file to be executed for run 3. Fingers f****** crossed.
+#Script works. BE SURE that the output directory exists. Otherwise the script will fail.
