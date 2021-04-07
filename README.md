@@ -3,14 +3,18 @@ Repo for Scripting for Biologists class
 
 For this project I will write a script to run all of the necessary steps to trim, analyze, and assemble reads into a transcriptome for the gray snapper Lutjanus griseus. I am currently already working on this project in my lab, but for this class I will assemble all of the necessary code into a script that can be executed once. The script will be written in bash and will be run remotely on the Alabama supercomputer. If I have the time I will also run this script for another species (lane snapper Lutjanus synagris) that another member of my lab is working on to show that the script works for multiple species. 
 
-All of the programs will be run on the Alabama Super Computer. 
+All of the programs will be run on the Alabama Super Computer.
 
+Queue, time limits, memory limits, and processing cores will be listed on this readme as I have used them. They will vary based on the size of your data.
+All scripts were run on DMC. 
 
 # The Players: 
 
 # FastQC
 
 Provides great quality assessment of your reads. The program creates an HTML file with accompanying graphics to assess quality across your reads. We will run this program twice, once in the beginning and once after cutting the adapters from sequences. 
+
+Ran using small queue, 4 cores, 4:00:00, 4gb memory limit. 
 
 
 # CutAdapt
@@ -27,11 +31,16 @@ For my alignment, these are the adapter sequences used:
 
 5'-GATCGGAAGAGCACACGTCTGAACTCCAGTCACATCACGATCTCGTATGCCGTCTTCTGCTTG-3'
 
+Ran using medium queue, 16 cores, 4:00:00, 16 gb memory limit. 
+
+
+# FastQC (again)
 
 Following CutAdapt, FastQC will be run again. From this, a second FastQC file will be created. You can use the information from these files to compare how your reads changed following CutAdapt. Things like number of reads, length of reads, per-base quality scores, percent GC content, etc. 
 
 *MAKE SURE FOR THIS STEP YOU ARE RUNNING FASTQC ON YOUR CUTADAPTED FILES* 
 
+Ran using medium queue, 16 cores, 4:00:00, 16gb memory limit. 
 
 # Trinity
 
@@ -44,9 +53,10 @@ Note: double check to make sure that the name of the directory you have created 
 Trinity works by running threee seperate software packages together in order to construct and assemble the transcriptome from your RNA-seq reads. 
 
 
+
 # Transdecoder
 
-We use transdecoder in order to map out potential coding regions withing our newly assembled transcriptome. 
+Transdecoder is used to map out potential coding regions withing our newly assembled transcriptome. 
 
 # cd-hit 
 
