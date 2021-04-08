@@ -17,6 +17,11 @@ Provides great quality assessment of your reads. The program creates an HTML fil
 
 Ran using small queue, 4 cores, 4:00:00, 4gb memory limit. 
 
+Following your FastQC run, you can download the output files from the super computer using the following command:
+
+    $ scp userID@dmc.asc.edu /c/User/Path_to_desired_directory
+    
+Once downloaded, you should have everything you need to view your fast results in the HTML format. 
 
 # CutAdapt
 
@@ -42,6 +47,8 @@ Following CutAdapt, FastQC will be run again. From this, a second FastQC file wi
 *MAKE SURE FOR THIS STEP YOU ARE RUNNING FASTQC ON YOUR CUTADAPTED FILES* 
 
 Ran using medium queue, 16 cores, 4:00:00, 16gb memory limit. 
+
+You can dowload these files to your computer using the same ``scp`` command as the first FastQC run. Make sure your path is on the correct files!!
 
 # Trinity
 
