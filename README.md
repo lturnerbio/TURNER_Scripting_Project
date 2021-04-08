@@ -81,8 +81,27 @@ Ran using the large queue, 32 cores, 150:00:00, 100gb memory limit.
 
 # cd-hit 
 
-This will remove redundant sequences from our assemblies. cd-hit will also produce a list of protein-families from a given fasta database.
+cd-hit removes redundant sequences from our assemblies. cd-hit will also produce a list of protein-families from a given fasta database.
 
+Breakdown of option included in script:
+
+#-i is the input file in fasta format
+
+#-o is the output destination and file name (two output files: fasta sequences file and list of clusters file)
+
+#-c is the sequence identity threshold (default is 0.9)
+
+#-n is the word length paired to -c (check userguide for values, default is 10)
+
+#-d length of description in cluster list file (default is 20)
+
+#-M memory limit in mb for the program (0 for unlimited, use queue to assign memory limit)
+
+#-T number of threads (0 means all CPUs will be used, set CPU limit using queue)
+
+VERY IMPORTANT:
+
+The output directory indicated in this script must already be created before running, otherwise the script will abort. This can be created using the ``mkdir`` command.
 
 # BUSCO
 
