@@ -71,7 +71,13 @@ NOTE: you can do this command individually for each file. However it is easier (
 
 # Transdecoder
 
-Transdecoder is used to map out potential coding regions withing our newly assembled transcriptome. 
+Transdecoder is used to map out potential coding regions within our newly assembled transcriptome. 
+
+This script is relatively straightforward. The -t in each line of code denotes how many cores it will use to run. Leave a numerical out and the script will run using the number of cores requested through the supercomputer. 
+
+
+Ran using the large queue, 32 cores, 150:00:00, 100gb memory limit. 
+*This only took a few hours to run
 
 # cd-hit 
 
