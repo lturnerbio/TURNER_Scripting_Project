@@ -112,14 +112,16 @@ The output directory indicated in this script must already be created before run
 
 # BUSCO
 
-BUSCO is used to asses both quality and annotation completeness of our newly assembled transcriptome. 
+BUSCO is used to asses both quality and annotation completeness of our newly assembled transcriptome. The supercomputing authority has a great reference explaining BUSCO here: https://hpcdocs.asc.edu/content/busco
 
+Before running BUSCO, you will need to set up an "Augustus" directory. This can be done with the following code:
 
-
-
-
-
-
+    $ cd
+    $ mkdir augustus
+    $ cd augustus
+    $ cp -r /opt/asn/apps/anaconda_3-4.2.0_cent/pkgs/augustus-3.2.3-boost1.60_0/config .
+    
+You will also need to create a config.ini that will give the script its parameters. A raw file can be found at the bottom of the supercomputing authority's page on BUSCO. 
 
 
 
