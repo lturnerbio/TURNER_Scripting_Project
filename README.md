@@ -125,6 +125,8 @@ You will also need to create a config.ini that will give the script its paramete
 
 The main things you need to manipulate within this config file are: Input file, Run name, out_path, and mode. All other variables can be left with the ``;`` in front so the script will ignore them. For input file give the path to the file you want to run through BUSCO. For run name, or ``out``, simply provide the name of the directory you would like your output to be named. My filename is something to the tune of "BUSCO_v4.1.2_22feb21". I.e., you have the software that was run, the version it ran on, and the date it was run. THIS NEEDS TO BE CHANGED FOR EACH RUN OF BUSCO. Out_path is just that, give the path to where you want your output directory to be located. Mode is important. This is where you specify if your data is for a genome, transcriptome, or proteome. For this analysis I have setmy config file to transcriptome. 
 
+BUSCO creates a summary text file in your output directory that will tell you how how "complete" your assembled transcriptome is.  
+
 # References
 
 Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
