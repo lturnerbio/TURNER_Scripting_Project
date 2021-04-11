@@ -127,6 +127,11 @@ The main things you need to manipulate within this config file are: Input file, 
 
 BUSCO creates a summary text file in your output directory that will tell you how how "complete" your assembled transcriptome is.  
 
+
+# Congratulations! 
+
+You should now have an assembled transcriptome! Note: this transcriptome is assembled but not annotated. To understand which genes are being expressed here, you will need to run through an annotation process. There are a handful of ways to achieve this:
+
 # References
 
 Andrews, S. (2010). FastQC:  A Quality Control Tool for High Throughput Sequence Data [Online]. Available online at: http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
