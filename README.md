@@ -110,6 +110,8 @@ VERY IMPORTANT:
 
 The output directory indicated in this script must already be created before running, otherwise the script will abort. This can be created using the ``mkdir`` command.
 
+Ran on medium queue, 8 cores, 100:00:00, 10gb memory limit.  
+
 # BUSCO
 
 BUSCO is used to asses both quality and annotation completeness of our newly assembled transcriptome. The supercomputing authority has a great reference explaining BUSCO here: https://hpcdocs.asc.edu/content/busco
@@ -127,7 +129,7 @@ The main things you need to manipulate within this config file are: Input file, 
 
 BUSCO creates a summary text file in your output directory that will tell you how how "complete" your assembled transcriptome is.  
 
-
+Ran on the small queue, 8 cores 24:00:00, 4gb memory limit. 
 # Congratulations! 
 
 You should now have an assembled transcriptome! Note: this transcriptome is assembled but not annotated. To understand which genes are being expressed here, you will need to run through an annotation process. There are a handful of ways to achieve this:
