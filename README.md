@@ -5,6 +5,10 @@ For this project I will write a script to run all of the necessary steps to trim
 
 All of the programs will be run on the Alabama Super Computer.
 
+Connecting to the supercomputer can be done using the following command, granted you have an accoutn set up:
+
+    $ ssh userID@dmc.asc.edu
+
 Queue, time limits, memory limits, and processing cores will be listed on this readme as I have used them. They will vary based on the size of your data.
 All scripts were run on DMC. 
 
