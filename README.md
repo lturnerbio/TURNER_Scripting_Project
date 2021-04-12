@@ -8,6 +8,15 @@ All of the programs will be run on the Alabama Super Computer.
 Connecting to the supercomputer can be done using the following command, granted you have an accoutn set up:
 
     $ ssh userID@dmc.asc.edu
+    
+Running a script on the supercomputer can be done as follows:
+
+    $ run_script /path_to_your_script_file
+
+or
+
+    $ run_script your_scripting_file
+    
 
 Queue, time limits, memory limits, and processing cores will be listed on this readme as I have used them. They will vary based on the size of your data.
 All scripts were run on DMC. 
